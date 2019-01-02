@@ -1,4 +1,4 @@
-#include <algorithm>
+#include<algorithm>
 #include<conio.h>
 #include<iostream>
 #include<stdlib.h>
@@ -39,9 +39,14 @@ cout << "1. Input Project Details" << endl;
 cout << "2. View Projects" << endl;
 cout << "3. Schedule Projects" << endl;
 cout << "4. Get a Project" << endl;
-cout << "5. Exit" << endl;
+cout << "5. Exit" << endl << endl;
+
+
+cout << "Enter your choice: ";
 
 ch1 = getch();
+
+cout << ch1;
 
 switch(ch1){
 	
@@ -58,7 +63,7 @@ switch(ch1){
 				do{
 				tmpID = 0;
 				xx = 1;
-				cout << "ID Number: " ;
+				cout << endl << endl << "ID Number: " ;
 				cin >> tmpID;
 				
 				for(int ct=0;ct<i;ct++){
@@ -69,7 +74,7 @@ switch(ch1){
 					}
 					}while(xx==0);
 			
-				cout << "Title:" ;
+				cout << "Title: " ;
 				cin >> proj[i].title;  //dapat walang space kasi magerror
 				cout << "Size: " ;
 				cin >> proj[i].size;
